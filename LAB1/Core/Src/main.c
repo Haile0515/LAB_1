@@ -22,7 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "Ex10.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -91,10 +91,12 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  int hour = 3, minute = 59, second = 50;
   while (1)
   {
     /* USER CODE END WHILE */
-
+	  updateTime(&hour, &minute, &second);
+	  displayClock(hour, minute, second);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
